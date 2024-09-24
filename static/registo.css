@@ -1,0 +1,141 @@
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 115px;
+}
+
+.titulo {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 3.0rem;
+}
+
+
+.navbar-toggler {
+    border-color: white;
+    background-color: black;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cline x1="3" y1="12" x2="21" y2="12" /%3E%3Cline x1="3" y1="6" x2="21" y2="6" /%3E%3Cline x1="3" y1="18" x2="21" y2="18" /%3E%3C/svg%3E');
+}
+
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        color: white;
+        text-align: right;
+    }
+
+    .nav-link:hover {
+        background-color: #1a1a1a;
+    }
+}
+
+.registo-form {
+    position: absolute;
+    padding-top: 120px;
+}
+
+.registo {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #FFFFFF;
+    font-size: 3.0rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-input {
+    width: 350px;
+    height: 35px;
+}
+
+.form-label {
+    color: #FFFFFF
+}
+
+.btn {
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.ja-registado {
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.login-aqui {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container .form-control {
+    padding-right: 40px;
+}
+
+.password-container .bi {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.error {
+    color: #FF0000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.success {
+    color: #4CA64C;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+

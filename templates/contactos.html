@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos - Luxury Wheels</title>
+
+    <!-- Bootstrap Lux -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <!-- Fonte 'Great Vibes' para o título da homepage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Fonte 'Roboto' para Contactos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+
+    <!-- ligação ao ficheiro .css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='contactos.css') }}">
+
+</head>
+<body>
+
+<!-- Barra superior da página -->
+<nav class="navbar navbar-expand-lg bg-primary" data-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white titulo" href="/">Luxury Wheels</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('veiculos') }}">Veículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('login') }}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('registo') }}">Registo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('contactos') }}">Contactos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="info">
+    <div>
+        <header class="contact-header">Contactos</header>
+        <div class="contact-info">
+            <p class="telefone">+351 215550000</p>
+            <p class="email">geral@luxurywheels.pt</p>
+        </div>
+    </div>
+    <div>
+        <header class="address-header">Onde estamos</header>
+        <div class="address-info">
+            <p class="address1">Avenida dos Redondos 173</p>
+            <p class="address2">2865-606 Fernão Ferro</p>
+        </div>
+    </div>
+    <a href="https://www.google.pt/maps/place/Av.+dos+Redondos+173,+3865-606+Fern%C3%A3o+Ferro/@38.5629502,-9.0825776,17z/data=!3m1!4b1!4m6!3m5!1s0xd19494261b690f3:0x777a2c368c7c3679!8m2!3d38.562946!4d-9.0800027!16s%2Fg%2F11fmgzr8d9?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"><img class="map" src="/static/images/maps.jpg"></a>
+</div>
+
+
+<!-- jQuery, Popper.js e Bootstrap JS (obrigatorio para os componentes de Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

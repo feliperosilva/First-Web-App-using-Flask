@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Luxury Wheels</title>
+    <!-- Bootstrap Lux -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <!-- Fonte 'Great Vibes' para o título da homepage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Fonte 'Roboto Mono' para Contactos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- ligação ao ficheiro .css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+<!-- Barra superior da página -->
+<nav class="navbar navbar-expand-lg bg-primary" data-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white titulo" href="#">Luxury Wheels</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('veiculos') }}">Veículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('login') }}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('registo') }}">Registo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('contactos') }}">Contactos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- texto de contactos -->
+<nav class="navbar2 navbar-expand-lg bg-primary" data-theme="dark">
+  <div class="container-fluid">
+    <div class="navbar-text">
+      <span class="slogan">Elegância em Cada Viagem.</span>
+      <div class="direitos">
+        <p class="direitos_reservados">Luxury Wheels© Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- jQuery, Popper.js e Bootstrap JS (obrigatorio para os componentes de Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

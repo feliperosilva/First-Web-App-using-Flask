@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 115px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 3.0rem;
+}
+
+
+.navbar-toggler {
+    border-color: white;
+    background-color: black;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cline x1="3" y1="12" x2="21" y2="12" /%3E%3Cline x1="3" y1="6" x2="21" y2="6" /%3E%3Cline x1="3" y1="18" x2="21" y2="18" /%3E%3C/svg%3E');
+}
+
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        color: white;
+        text-align: right;
+    }
+
+    .nav-link:hover {
+        background-color: #1a1a1a;
+    }
+}
+
+.navbar-user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.welcome {
+    color: #FFFFFF;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 14px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.logout {
+    color: #FFFFFF;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.choice {
+    align-items: center;
+    padding-top: 120px;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.vehicle-image {
+    width: 500px;
+    height: auto;
+}
+
+.vehicle-info {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.reservation {
+    margin-left: 50px;
+}
+
+.dates {
+    padding-top: 120px;
+}
+
+.form-control {
+    width: 500px;
+}
+
+.confirm-dates {
+    padding-top: 10px;
+}
+
+.total {
+    padding-top: 20px;
+}
+
+.total-amount {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+}
+
+.payment {
+    padding-top: 20px;
+}
+
+.date_error, .card_error {
+    color: #FF0000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.reservation {
+    margin-right: 50px;
+}
+
+.payment-details {
+    display: none;
+}
+
+.payment-methods {
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-weight: bold;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.transfer-details {
+    padding-top: 20px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.mb-details {
+    padding-top: 20px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.form-check {
+    padding-bottom: 20px;
+}
+
+.btn-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.confirm-payment {
+    padding-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.footnote {
+    font-size: 15px;
+}
+
+.footnote1 {
+    width: 500px;
+    padding-bottom: 10px;
+}
+
