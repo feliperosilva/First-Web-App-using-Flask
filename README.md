@@ -1,8 +1,8 @@
 # First Web App using Flask
 Creation of a website as part of the Final Project for the course in Python Programming
 
-In this project, the main goal was to create a website where the user can rent a car from this company called Luxury Wheel
-The path to renting a car would be:
+In this project, the main goal was to create a website where the user can rent a vehicle from a company called Luxury Wheels
+The path to renting a vehicle would be:
 1. The user must first register on the website (information sent to a database)
 2. After registering, the user must log in on the website (information retrieved from the database)
 3. Once logged in, the user can then choose a vehicle from a list of available vehicles (availability depends on some chacks made in the database)
