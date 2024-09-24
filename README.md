@@ -1,4 +1,4 @@
-# First Website
+# First Web App using Flask
 Creation of a website as part of the Final Project for the course in Python Programming
 
 In this project, the main goal was to create a website where the user can rent a car from this company called Luxury Wheel
